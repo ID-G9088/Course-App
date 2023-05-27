@@ -1,0 +1,9 @@
+@import '../variables.scss';
+
+.btn {
+    padding: 10px 15px;
+    border: 3px solid $btn-border-color;
+    background-color: transparent;
+    font-size: 20px;
+    width: 250px;
+}

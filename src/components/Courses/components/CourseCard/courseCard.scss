@@ -1,0 +1,79 @@
+.course {
+  list-style: none;
+  display: flex;
+  border:3px solid green;
+
+  &:hover {
+    box-shadow: 5px 2px 4px grey;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__about {
+    padding: 20px;
+    width:70%;
+  }
+
+  &__specs {
+    padding: 20px;
+    width: 30%;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 15px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__authors {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__btns {
+    // text-align: center;
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+    .btn:hover {
+      box-shadow: 5px 2px 4px grey;
+    }
+  }
+
+  .admin-btns {
+    display: flex;
+    column-gap: 5px;
+  }
+
+  .btn {
+    &-change {
+      width: 40px;
+      background-image: url('../../../../resources/CourseCard/pencil.png') ;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-delete {
+      width: 40px;
+      background-image: url('../../../../resources/CourseCard/trash.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

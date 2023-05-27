@@ -1,0 +1,61 @@
+.course-info {
+  border: 3px solid aqua;
+  min-height: 700px;
+
+  .back-arrow a{
+    text-decoration: none;
+    color: black;
+
+    &::before {
+      content: '< ';
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    margin: 40px 0;
+    text-align:center;
+  }
+
+  &__details {
+    display:flex;
+    column-gap: 80px;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  &__description {
+      width: 50%;
+      padding:0;
+      margin:0;
+  }
+
+  &__features {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    row-gap: 20px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__authors {
+      display:flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom:10px;
+      }
+  }
+}

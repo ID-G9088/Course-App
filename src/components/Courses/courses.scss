@@ -1,0 +1,12 @@
+.course-list {
+    border: 3px solid skyblue;
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    .search-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
